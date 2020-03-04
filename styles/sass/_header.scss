@@ -1,0 +1,59 @@
+
+/* header styles */
+
+header {
+    height: 100vh;
+}
+
+/* nav area */
+
+nav {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-ul {
+    position: relative;
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -125.9335px;
+    top: 50%;
+    margin-top: -25px;
+}
+
+.nav-ul, .nav-ul-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shopping-cart {
+    position: relative;
+}
+
+.shopping-items {
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    top: 50%;
+    border-radius: 50%;
+    background-color : #A4F1DC;
+    height: 30px;
+    width: 30px;
+}
+
+.landing-page {
+    height: 80vh;
+    background-image: url("../assets/home-1.jpeg");
+    background-size: cover;
+}
+
+.hamburger-menu {
+    display: none;
+}

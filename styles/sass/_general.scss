@@ -1,0 +1,87 @@
+/* General Styles */
+
+* {
+    border: 3px solid red;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+a {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+.wrapper {
+    max-width: 1140px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.to-upper {
+    text-transform: uppercase;
+}
+
+
+/* Provided text styles */
+
+
+.primary-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 5.8rem;
+    text-align: center;
+    line-height: 2.6rem;
+    letter-spacing: 1.4px;
+}
+
+.secondary-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 4.8rem;
+    line-height: 6rem;
+    letter-spacing: 1.2px;
+}
+
+.italicized {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2.4rem;
+    text-align: center;
+    line-height: 36px;
+}
+
+.bolded {
+font-weight: bold;
+}
+
+.subheader-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+    letter-spacing: 9px;
+}
+
+.body-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+}
+
+main {
+    background-color: #EDEDED;
+}

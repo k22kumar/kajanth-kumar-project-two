@@ -1,0 +1,91 @@
+
+/* about section styles */
+
+.about-container {
+    height: 100vh;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content div {
+    width: 50%;
+}
+
+.about-image {
+    position: relative;
+    margin-left: auto;
+    margin-right: 10px;
+    border: 10px solid white;
+}
+
+.about-text-container p:first-of-type{
+    margin-bottom: 10px;
+}
+
+.watermark {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+}
+
+/* features area */
+
+.feature-section     {
+    display: flex;
+    background-color: white;
+}
+
+
+.features-container {
+    display: flex;
+    margin-left: 15%;
+}
+
+.features-container ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feature {
+    display: flex;
+    flex: 1 1 250px;
+}
+
+.feature :nth-child(odd) {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* testimonials area */
+
+.testimonial {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.stars {
+    color: #F6AB09;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Gallery area */
+
+.gallery-section ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-section ul li {
+    margin: 10px;
+    width: calc((100% - 60px)/3);
+}
+
+/* contact area */
+
