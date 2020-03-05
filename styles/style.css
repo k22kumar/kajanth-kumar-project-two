@@ -778,6 +778,7 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: white;
 }
 
 .info-image {
@@ -785,7 +786,8 @@ nav {
 }
 
 .info-text {
-  width: 45%;
+  width: 30%;
+  padding-left: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -800,4 +802,27 @@ nav {
 
 .info-text h2, .info-text h3 {
   letter-spacing: 0;
+}
+
+.info-text p {
+  color: #999999;
+}
+
+.info-text p span {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: black;
+}
+
+.info-text p:first-of-type {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.info-text h2.primary-title {
+  margin-bottom: 100px;
+}
+
+.info-text h3 span, .info-text h2 span {
+  color: #CCCCCC;
 }

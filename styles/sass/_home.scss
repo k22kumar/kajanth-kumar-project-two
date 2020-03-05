@@ -152,6 +152,7 @@ color: $primary-grey;
 /* contact area */
 .information-container {
     display: flex;
+    background-color: white;
 }
 
 .info-image {
@@ -159,12 +160,41 @@ color: $primary-grey;
 }
 
 .info-text {
-    width: 45%;
+    width: 30%;
+    padding-left: 100px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     h2,h3 {
         letter-spacing: 0;
     }
-}
 
+    p {
+        color: $primary-grey;
+    }
+
+    p span {
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        color: black;
+    }
+
+    p:first-of-type, p:last-of-type, h2 span {
+
+    }
+
+    p:first-of-type{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    
+    }
+
+    h2.primary-title {
+        margin-bottom: 100px;
+    }
+
+    h3 span , h2 span{
+    color: $secondary-grey;
+    }
+     
+}
