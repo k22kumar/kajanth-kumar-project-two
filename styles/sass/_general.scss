@@ -38,19 +38,19 @@ html {
 
 .primary-title {
     font-family: 'Playfair Display', serif;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 5.8rem;
     text-align: center;
-    line-height: 2.6rem;
+    line-height: 26px;
     letter-spacing: 1.4px;
 }
 
 .secondary-title {
     font-family: 'Playfair Display', serif;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 4.8rem;
-    line-height: 6rem;
-    letter-spacing: 1.2px;
+    line-height: 60px;
+    letter-spacing: -1.2px;
 }
 
 .italicized {
@@ -71,7 +71,7 @@ font-weight: bold;
     font-weight: 600;
     font-size: 1.6rem;
     text-align: center;
-    letter-spacing: 9px;
+    letter-spacing: 8px;
 }
 
 .body-text {
@@ -82,6 +82,10 @@ font-weight: bold;
     letter-spacing: 0.3px;
 }
 
+.grey-accent {
+    color: $secondary-grey;
+}
+
 main {
-    background-color: #EDEDED;
+    background-image: url(./../assets/pattern.png);
 }
