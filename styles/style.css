@@ -445,18 +445,12 @@ textarea {
 }
 
 /* General Styles */
-* {
-  border: 3px solid red;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  text-decoration: none;
-}
-
 a {
   cursor: pointer;
   width: 100%;
   height: 100%;
   padding: 10px 15px;
+  text-decoration: none;
 }
 
 img {
@@ -537,6 +531,10 @@ header {
   height: 100vh;
 }
 
+header .nav-links:hover, header .nav-links:focus {
+  background-color: #A4F1DC;
+}
+
 /* nav area */
 nav {
   height: 20vh;
@@ -582,19 +580,31 @@ nav {
 
 .shopping-items {
   position: absolute;
-  right: 0;
-  bottom: 50%;
-  top: 50%;
+  right: 5px;
+  top: 17px;
   border-radius: 50%;
   background-color: #A4F1DC;
-  height: 30px;
-  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 15px;
+  width: 15px;
+  font-size: 1.2rem;
 }
 
 .landing-page {
   height: 80vh;
   background-image: url("../assets/home-1.jpeg");
   background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hamburger-menu {
@@ -604,11 +614,12 @@ nav {
 /* about section styles */
 .about-container {
   height: 100vh;
+  background-color: #EDEDED;
 }
 
 .about-container h3 {
   color: #999999;
-  margin-top: 90px;
+  padding-top: 60px;
   margin-bottom: 40px;
 }
 
@@ -712,6 +723,33 @@ nav {
 
 /* testimonials area */
 .testimonial {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.slide-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300%;
+}
+
+.angle-left, .angle-right {
+  position: absolute;
+  top: 50%;
+  padding: 20px;
+}
+
+.angle-left {
+  left: -70px;
+}
+
+.angle-right {
+  right: -70px;
+}
+
+.testimonial-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -729,14 +767,22 @@ nav {
   height: 90vh;
   margin: 10vh auto;
   padding: 0 60px;
+  position: absolute;
+  -webkit-transition: margin 800ms;
+  transition: margin 800ms;
+  width: calc(100% / 3);
 }
 
-.testimonial p:first-of-type {
+.testimonial-content p:first-of-type {
   color: #999999;
   margin-bottom: 40px;
 }
 
-.testimonial h2 {
+.testimonial-content .italicized {
+  width: 80%;
+}
+
+.testimonial-content h2 {
   margin-bottom: 60px;
 }
 
@@ -751,6 +797,10 @@ nav {
   margin: 20px 0;
 }
 
+.review {
+  letter-spacing: normal;
+}
+
 /* Gallery area */
 .gallery-section ul {
   display: -webkit-box;
@@ -761,8 +811,20 @@ nav {
 }
 
 .gallery-section ul li {
-  margin: 10px;
-  width: calc((100% - 60px)/3);
+  margin: 0 20px 20px 0;
+  width: calc((100% - 40px)/3);
+}
+
+.gallery-section li:nth-of-type(3) {
+  margin-right: 0;
+}
+
+.gallery-section li:last-child {
+  margin-right: 0;
+}
+
+.gallery-section ul {
+  margin-bottom: 50px;
 }
 
 .gallery-section h3 {
@@ -825,4 +887,83 @@ nav {
 
 .info-text h3 span, .info-text h2 span {
   color: #CCCCCC;
+}
+
+.blog {
+  /* header styles*/
+}
+
+.blog .landing-page {
+  background-image: url("../assets/blog-1.jpeg");
+}
+
+footer, button, input {
+  background-color: #0d0d0d;
+}
+
+input, button {
+  border: none;
+}
+
+footer {
+  height: 40vh;
+}
+
+footer .links-container, footer .copyright, footer .social-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .links-container, footer .copyright {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .links-container {
+  padding-top: 50px;
+}
+
+footer a {
+  padding-left: 0;
+}
+
+footer a:visited, footer h3, footer button, footer label, footer input {
+  color: #CCCCCC;
+}
+
+footer a:hover, footer a:focus {
+  color: white;
+}
+
+footer button:hover, footer button:focus {
+  background-color: #999999;
+  color: #A4F1DC;
+}
+
+footer form, footer .links-container {
+  border-bottom: 2px solid #999999;
+}
+
+footer form {
+  width: 440px;
+}
+
+footer fieldset {
+  margin-top: 10px;
+}
+
+footer input {
+  width: calc(100% - 40px);
+}
+
+footer .social-bar {
+  width: 19%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }

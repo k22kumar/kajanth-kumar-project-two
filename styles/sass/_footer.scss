@@ -1,0 +1,66 @@
+
+    footer, button, input {
+        background-color: $footer-black;
+    }
+
+    input, button {
+        border: none;
+    }
+
+    footer {
+        
+        height: 40vh;
+        .links-container, .copyright, .social-bar {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .links-container, .copyright {
+            
+            justify-content: space-between;
+        }
+
+        .links-container {
+            padding-top: 50px;
+        }
+
+        a {
+            padding-left: 0;
+        }
+        a:visited, h3,button, label, input {
+            color: $secondary-grey;
+        }
+
+        a:hover,a:focus 
+        {
+            color: white;
+        } 
+
+        button:hover,button:focus 
+        {
+            background-color: $primary-grey;
+            color: #A4F1DC;
+        } 
+
+        form, .links-container {
+            border-bottom: 2px solid $primary-grey;
+        }
+
+        form {
+            width: 440px;
+        }
+
+        fieldset {
+            margin-top: 10px
+        }
+
+        input {
+            width: calc(100% - 40px);
+        }
+
+        .social-bar {
+            width: 19%;
+            justify-content: space-between;
+        }
+
+    }
