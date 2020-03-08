@@ -1,51 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="contact">
 
 <!-- SUNSHINE CONTACT HTML -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunshine contact</title>
+    <title>Contact</title>
     <script src="https://kit.fontawesome.com/63b84c9d87.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Poppins:400,600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
     <header>
         <nav class="wrapper">
-            <ul class="nav-link-ul ">
-                <li class="to-upper body-text nav-links"><a href="index.html"><span>home</span></a></li>
-                <li class="to-upper body-text nav-links"><a href=".">about</a></li>
-                <li class="to-upper body-text nav-links"><a href="">reserve</a></li>
-            </ul>
-            <h1 class="nav-logo">Sunshine</h1>
-            <ul class="nav-link-ul ">
-                <li class="to-upper body-text nav-links"><a href="blog.html">blog</a></li>
-                <li class="to-upper body-text nav-links"><a href="contact.html">contact</a></li>
-                <li class="to-upper body-text nav-links">
-                    <a href="">
-                        <i class="fas fa-search"></i>
-                    </a>
+            <ul class="nav-ul subheader-text">
+                <h2 class="primary-title logo bolded">Sunshine</h2>
+                <li>
+                    <ul class="nav-ul-links">
+                        <li class="to-upper body-text nav-links"><a href="index.html"><span>home</span></a></li>
+                        <li class="to-upper body-text nav-links"><a href=".">about</a></li>
+                        <li class="to-upper body-text nav-links"><a href="">reserve</a></li>
+                    </ul>
                 </li>
-                <li class="to-upper body-text nav-links">
-                    <a href="">
-                        <i class="fas fa-shopping-bag"></i>
-                        <p>2</p>
-                    </a>
+                <li>
+                    <ul class="nav-ul-links">
+                        <li class="to-upper body-text nav-links"><a href="blog.html">blog</a></li>
+                        <li class="to-upper body-text nav-links"><a href="contact.html">contact</a></li>
+                        <li class="to-upper body-text nav-links">
+                            <a href="">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </li>
+                        <li class="to-upper body-text nav-links shopping-cart">
+                            <a href="">
+                                <i class="fas fa-shopping-bag"></i>
+                                <div class="shopping-items">
+                                    <p>2</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
             <!-- mobile icon -->
             <i class="fas fa-bars hamburger-menu"></i>
         </nav>
-        <div><img src="./assets/blog-1.jpeg" alt="tropical beach"></div>
+        <div class="landing-page">
+            
+        </div>
     </header>
 
-    <main>
+    <main class="wrapper">
+
+        <section>
+            <h1 class="primary-title">Contact details</h1>
+
+            <p>
+                Design cute expedition, excursion fun modern website clean website traveling travelblogger traveling theme. Travel fun simple design, simple fun design. 
+            </p>
+
+            <div class="connection-container">
+                <div class="connection">
+                    <div class="connection-icon">
+
+                    </div>
+                    <h3 class="subheader-text bolded">
+                        Phone
+                    </h3>
+                    <p>
+                        Phone 01: (0091) 8547 632521
+                    </p>
+                    <br>
+                    <p>
+                        Phone 02: (084) 965 4788
+                    </p>
+                </div>
+                <div class="connection">
+                    <div class="connection-icon">
+
+                    </div>
+                    <h3 class="subheader-text bolded">
+                        Address
+                    </h3>
+                    <p>
+                        123 King Str, 4th Floor, Utral Hosue Building,
+                    </p>
+                    <br>
+                    <p>
+                        Honolulu, Hawaii.
+                    </p>
+                </div>
+                <div class="connection">
+                    <div class="connection-icon">
+
+                    </div>
+                    <h3 class="subheader-text bolded">
+                        Email
+                    </h3>
+                    <p>
+                        support@sunshine.com
+                    </p>
+                    <br>
+                    <p>
+                        hello@sunshine.com
+                    </p>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="contact-form-container">
+            <div class="post-container">
+                <h2 class="secondary-title">Get in touch with us</h2>
+                <p>Travelling travelblogger traveling theme. Travel fun simple design, simple fun</p>
+
+                <form action="">
+                    <fieldset class="body-text">
+                        <div class="post-requirements">
+                            <label for="email" class="visuallyHidden">Email</label>
+                            <input type="email" placeholder="youremail@domain.com" id="email">
+            
+                            <label for="full-name" class="visuallyHidden">Enter your name...</label>
+                            <input type="text" name="full-name" id="full-name" placeholder="Enter your name...">
+            
+                            <label for="subject" class="visuallyHidden">Subject</label>
+                            <input type="text" name="subject" id="subject" placeholder="Subject (Optional)">
+                        </div>
+            
+                        <div class="post-text">
+                            <label for="comment" class="visuallyHidden">Here goes your comment</label>
+                            <textarea name="comment" id="comment" placeholder="Here goes your comment" maxlength="500">
+            
+                                        </textarea>
+                        </div>
+                    </fieldset>
+                </form>
+                <button class="send-btn to-upper bolded">Send Messenger</button>
+            </div>
+        </section>
 
     </main>
 
-    <footer>
-
+    <footer class="body-text">
+        <div class="footer-content-container wrapper">
+            <ul class="links-container">
+                <li class="footer-links">
+                    <ul class="Site Map">
+                        <li>
+                            <a href="">Site Map</a>
+                        </li>
+                        <li>
+                            <a href="">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="">Help</a>
+                        </li>
+                        <li>
+                            <a href="">Affiliate</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer-links">
+                    <ul>
+                        <li>
+                            <a href="">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="">Blog</a>
+                        </li>
+                        <li>
+                            <a href="">Location</a>
+                        </li>
+                        <li>
+                            <a href="">Press</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer-links">
+                    <h3>Sign up for get our newsletter</h3>
+                    <form action="">
+                        <fieldset>
+                            <label for="email"></label>
+                            <input type="email" id="email" name="email" placeholder="Your email...">
+                            <label for="send" class="visuallyHidden">Confirm email</label>
+                            <button type="submit">
+                                <i class="far fa-paper-plane"></i>
+                            </button>
+                        </fieldset>
+                    </form>
+                </li>
+            </ul>
+            <div class="copyright">
+                <p>&#xa9; 2018 Sunshine Hotel</p>
+                <ul class="social-bar">
+                    <li>
+                        <a href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
     </body>
 
