@@ -620,7 +620,7 @@ input, button {
   border: none;
 }
 
-footer {
+footer .footer-content-container {
   height: 40vh;
 }
 
@@ -656,7 +656,6 @@ footer a:hover, footer a:focus {
 }
 
 footer button:hover, footer button:focus {
-  background-color: #999999;
   color: #A4F1DC;
 }
 
@@ -795,7 +794,7 @@ footer .social-bar {
 
 /* testimonials area */
 .testimonial {
-  overflow: hidden;
+  position: relative;
   height: 100vh;
 }
 
@@ -804,7 +803,7 @@ footer .social-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 300%;
+  width: 100%;
 }
 
 .angle-left, .angle-right {
@@ -842,7 +841,6 @@ footer .social-bar {
   position: absolute;
   -webkit-transition: margin 800ms;
   transition: margin 800ms;
-  width: calc(100% / 3);
 }
 
 .testimonial-content p:first-of-type {
@@ -885,6 +883,10 @@ footer .social-bar {
 .gallery-section ul li {
   margin: 0 20px 20px 0;
   width: calc((100% - 40px)/3);
+}
+
+.gallery-section {
+  padding-top: 50px;
 }
 
 .gallery-section li:nth-of-type(3) {
@@ -1373,7 +1375,7 @@ footer .social-bar {
 .contact main {
   background-image: none;
   background-color: white;
-  padding: 80px 0;
+  padding-top: 80px;
 }
 
 .contact h1, .contact h3 {
@@ -1398,6 +1400,10 @@ footer .social-bar {
       -ms-flex-pack: center;
           justify-content: center;
   padding-left: 5%;
+}
+
+.contact .contact-details-container .connection-container .connection-icon {
+  margin-bottom: 10px;
 }
 
 .contact .contact-details-container .connection-container .connection:nth-of-type(-n+2) {
@@ -1435,22 +1441,41 @@ footer .social-bar {
   margin: 0;
 }
 
-.contact .contact-form-container input:hover::-webkit-input-placeholder, .contact .contact-form-container input:focus::-webkit-input-placeholder, .contact .contact-form-container textarea:hover, .contact .contact-form-container textarea:focus {
+.contact .contact-form-container input:hover::-webkit-input-placeholder, .contact .contact-form-container input:focus::-webkit-input-placeholder, .contact .contact-form-container textarea:hover::-webkit-input-placeholder, .contact .contact-form-container textarea:focus::-webkit-input-placeholder {
   color: black;
+}
+
+.contact .contact-form-container input:hover:-ms-input-placeholder, .contact .contact-form-container input:focus:-ms-input-placeholder, .contact .contact-form-container textarea:hover:-ms-input-placeholder, .contact .contact-form-container textarea:focus:-ms-input-placeholder {
+  color: black;
+}
+
+.contact .contact-form-container input:hover::-ms-input-placeholder, .contact .contact-form-container input:focus::-ms-input-placeholder, .contact .contact-form-container textarea:hover::-ms-input-placeholder, .contact .contact-form-container textarea:focus::-ms-input-placeholder {
+  color: black;
+}
+
+.contact .contact-form-container input:hover::placeholder, .contact .contact-form-container input:focus::placeholder, .contact .contact-form-container textarea:hover::placeholder, .contact .contact-form-container textarea:focus::placeholder {
+  color: black;
+}
+
+.contact .contact-form-container input:hover, .contact .contact-form-container input:focus, .contact .contact-form-container textarea:hover, .contact .contact-form-container textarea:focus {
   border-bottom: 1px solid black;
 }
 
-.contact .contact-form-container input:hover:-ms-input-placeholder, .contact .contact-form-container input:focus:-ms-input-placeholder, .contact .contact-form-container textarea:hover, .contact .contact-form-container textarea:focus {
+.contact .contact-form-container .send-btn {
+  background-color: white;
   color: black;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid white;
+}
+
+.contact .contact-form-container .send-btn:hover, .contact .contact-form-container .send-btn:focus {
   border-bottom: 1px solid black;
 }
 
-.contact .contact-form-container input:hover::-ms-input-placeholder, .contact .contact-form-container input:focus::-ms-input-placeholder, .contact .contact-form-container textarea:hover, .contact .contact-form-container textarea:focus {
-  color: black;
-  border-bottom: 1px solid black;
-}
-
-.contact .contact-form-container input:hover::placeholder, .contact .contact-form-container input:focus::placeholder, .contact .contact-form-container textarea:hover, .contact .contact-form-container textarea:focus {
-  color: black;
-  border-bottom: 1px solid black;
+.contact .footer-image {
+  background-image: url("../assets/contact-2.jpeg");
+  background-color: none;
+  background-size: cover;
+  height: 70vh;
 }

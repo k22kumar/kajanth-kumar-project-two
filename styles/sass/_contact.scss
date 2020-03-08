@@ -19,7 +19,7 @@ header {
 main {
     background-image: none;
     background-color: white;
-    padding: 80px 0;
+    padding-top: 80px;
 }
 
 h1, h3 {
@@ -42,6 +42,9 @@ h1, h3 {
         justify-content: center;
         padding-left: 5%;
 
+        .connection-icon{
+            margin-bottom: 10px;
+        }
 
         .connection:nth-of-type(-n+2)  {
                     // margin-right: 20px;
@@ -74,19 +77,40 @@ h1, h3 {
         margin: 0;
     }
 
-    input:hover::placeholder, input:focus::placeholder, textarea:hover, textarea:focus {
+    
+
+    input:hover::placeholder, input:focus::placeholder,textarea:hover::placeholder, textarea:focus::placeholder {
         color: black;
-        border-bottom: 1px solid black;
     }
 
     
+    input:hover, input:focus,textarea:hover, textarea:focus {
+        border-bottom: 1px solid black;
+    }
+
+    .send-btn {
+        background-color: white;
+        color: black;
+        padding: 10px 0;
+        margin-bottom: 20px;
+        border-bottom: 1px solid white;
+    }
+
+    .send-btn:hover, .send-btn:focus {
+        border-bottom: 1px solid black;
+    }
 }
 
 
 
 /* footer styles*/
 
-
+.footer-image {
+    background-image: url("../assets/contact-2.jpeg");
+    background-color: none;
+    background-size: cover;
+    height: 70vh;
+}
 
     /* end of contact page styles*/
 }

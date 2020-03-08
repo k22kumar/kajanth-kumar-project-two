@@ -98,16 +98,16 @@ color: $primary-grey;
 /* testimonials area */
 
 .testimonial {
+    position: relative;
+    // overflow: hidden;
     
-    overflow: hidden;
-
  height: 100vh;
 }
 
 .slide-container {
  position: relative;
  display: flex;
- width: 300%;
+  width: 100%;
 }
 
 .angle-left, .angle-right {
@@ -135,7 +135,7 @@ color: $primary-grey;
  padding: 0 60px;
  position: absolute;
  transition: margin 800ms;
- width: calc(100% / 3);
+//  width: calc(100% / 3);
 
     p:first-of-type {
         color: $primary-grey;
@@ -183,6 +183,8 @@ color: $primary-grey;
 
 
 .gallery-section {
+
+    padding-top: 50px;
 
     li:nth-of-type(3) {
     margin-right: 0; 
