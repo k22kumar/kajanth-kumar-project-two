@@ -1006,7 +1006,6 @@ footer .social-bar {
   /* Comment Area */
   /* I DID NOT WRITE THIS COMMENT SHAPE, original code by user Eze, the codepen I copied most the code from https://codepen.io/talentedunicorn/pen/rEqsf*/
   /* Community comments */
-  /* User comment form */
 }
 
 .blog .blog-content-container .article-heading, .blog .blog-content-container .article-info, .blog .blog-content-container .info-pair, .blog .blog-content-container ul, .blog .blog-content-container .share, .blog .blog-content-container .posts-container, .blog .blog-content-container .posts-info, .blog .blog-content-container .comment, .blog .blog-content-container .comment-text, .blog .blog-content-container .post-container, .blog .blog-content-container form {
@@ -1266,7 +1265,8 @@ footer .social-bar {
   color: #999999;
 }
 
-.blog .blog-content-container .post-container {
+/* User comment form universal to contact page as well */
+.post-container {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -1276,25 +1276,25 @@ footer .social-bar {
           flex-direction: column;
 }
 
-.blog .blog-content-container .post-container form, .blog .blog-content-container .post-container fieldset {
+.post-container form, .post-container fieldset {
   width: 100%;
 }
 
-.blog .blog-content-container .post-container h2, .blog .blog-content-container .post-container input {
+.post-container h2, .post-container input {
   border-bottom: 2px solid #EDEDED;
 }
 
-.blog .blog-content-container .post-container h2 {
+.post-container h2 {
   padding-bottom: 20px;
   width: 100%;
   margin-bottom: 50px;
 }
 
-.blog .blog-content-container .post-container input {
+.post-container input {
   background-color: white;
 }
 
-.blog .blog-content-container .post-container .send-btn {
+.post-container .send-btn {
   background-color: #84A016;
   padding: 20px 35px;
   color: white;
@@ -1303,12 +1303,12 @@ footer .social-bar {
   transition: all 0.4s;
 }
 
-.blog .blog-content-container .post-container .send-btn:hover, .blog .blog-content-container .post-container .send-btn:focus {
+.post-container .send-btn:hover, .post-container .send-btn:focus {
   background-color: #CCCCCC;
   color: black;
 }
 
-.blog .blog-content-container .post-container fieldset, .blog .blog-content-container .post-container .post-requirements, .blog .blog-content-container .post-container .posts-text {
+.post-container fieldset, .post-container .post-requirements, .post-container .posts-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1316,14 +1316,14 @@ footer .social-bar {
       flex-wrap: wrap;
 }
 
-.blog .blog-content-container .post-container fieldset {
+.post-container fieldset {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.blog .blog-content-container .post-container fieldset .post-requirements input {
+.post-container fieldset .post-requirements input {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 calc((100% - 40px)/ 3);
           flex: 1 0 calc((100% - 40px)/ 3);
@@ -1333,11 +1333,11 @@ footer .social-bar {
   height: 37px;
 }
 
-.blog .blog-content-container .post-container fieldset .post-requirements input:nth-of-type(-n+2) {
+.post-container fieldset .post-requirements input:nth-of-type(-n+2) {
   margin-right: 20px;
 }
 
-.blog .blog-content-container .post-container fieldset .post-text textarea {
+.post-container fieldset .post-text textarea {
   width: 100%;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 100%;
@@ -1380,6 +1380,77 @@ footer .social-bar {
   text-align: left;
 }
 
+.contact .contact-details-container h1 {
+  margin: 30px 0;
+}
+
+.contact .contact-details-container .description {
+  margin-bottom: 80px;
+}
+
+.contact .contact-details-container .connection-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 5%;
+}
+
+.contact .contact-details-container .connection-container .connection:nth-of-type(-n+2) {
+  border-right: 2px solid #EDEDED;
+}
+
+.contact .contact-details-container .connection-container .connection {
+  min-width: 222px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc((100% - 120px)/3);
+          flex: 1 0 calc((100% - 120px)/3);
+  padding: 0 20px;
+}
+
 .contact .description {
-  width: 80%;
+  width: 60%;
+}
+
+.contact .contact-form-container {
+  margin: 30px auto;
+}
+
+.contact .contact-form-container h2 {
+  border: none;
+  margin: 0;
+}
+
+.contact .contact-form-container input:hover::-webkit-input-placeholder, .contact .contact-form-container input:focus::-webkit-input-placeholder, .contact .contact-form-container textarea:hover, .contact .contact-form-container textarea:focus {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.contact .contact-form-container input:hover:-ms-input-placeholder, .contact .contact-form-container input:focus:-ms-input-placeholder, .contact .contact-form-container textarea:hover, .contact .contact-form-container textarea:focus {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.contact .contact-form-container input:hover::-ms-input-placeholder, .contact .contact-form-container input:focus::-ms-input-placeholder, .contact .contact-form-container textarea:hover, .contact .contact-form-container textarea:focus {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.contact .contact-form-container input:hover::placeholder, .contact .contact-form-container input:focus::placeholder, .contact .contact-form-container textarea:hover, .contact .contact-form-container textarea:focus {
+  color: black;
+  border-bottom: 1px solid black;
 }

@@ -26,9 +26,63 @@ h1, h3 {
     text-align: left;
 }
 
-.description {
-    width: 80%;
+.contact-details-container {
+
+    h1 {
+        margin: 30px 0;
+    }
+
+    .description {
+        margin-bottom: 80px;
+    }
+
+    .connection-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 5%;
+
+
+        .connection:nth-of-type(-n+2)  {
+                    // margin-right: 20px;
+                    border-right: 2px solid $background-grey;
+                }
+
+        .connection {
+            min-width: 222px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex: 1 0 calc((100% - 120px)/3);
+            padding: 0 20px;
+
+        }
+
+    }
+
 }
+
+
+.description {
+    width: 60%;
+}
+
+.contact-form-container {
+    margin: 30px auto;
+    h2 {
+        border: none;
+        margin: 0;
+    }
+
+    input:hover::placeholder, input:focus::placeholder, textarea:hover, textarea:focus {
+        color: black;
+        border-bottom: 1px solid black;
+    }
+
+    
+}
+
+
 
 /* footer styles*/
 
