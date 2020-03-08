@@ -35,7 +35,7 @@ main {
 .blog-content-container {
     width: 90%;
     margin: 0 auto;
-     .article-heading, .article-info, .info-pair, ul, .share, .posts-container, .posts-info, .comment, .comment-text, .post-comment, form  {
+     .article-heading, .article-info, .info-pair, ul, .share, .posts-container, .posts-info, .comment, .comment-text, .post-container, form  {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -149,7 +149,7 @@ main {
     h3:nth-last-of-type(2) {
        padding-bottom: 25px;
         margin-bottom: 70px;
-        border-bottom: 2px solid;
+        border-bottom: 2px solid $primary-grey;
     }
 
     /* card start */
@@ -171,7 +171,7 @@ main {
         }
         &:hover , &:focus{
             text-decoration: underline;
-            box-shadow: 0px 5px 4px 1px $secondary-grey;
+            box-shadow: 0px 6px 5px 1px $secondary-grey;
         }
     }
 
@@ -197,6 +197,162 @@ main {
     }
     /* card end */
 
+    /* Comment Area */
+
+    .comment-title {
+        padding-bottom: 20px;
+        border-bottom: 2px solid $primary-grey;
+        margin-bottom: 40px;
+    }
+
+    /* I DID NOT WRITE THIS COMMENT SHAPE, original code by user Eze, the codepen I copied most the code from https://codepen.io/talentedunicorn/pen/rEqsf*/
+
+    /* Community comments */
+
+    .comment {
+        align-items: flex-start;
+    }
+
+    .tip {
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        background: transparent;
+        border: 10px solid $background-grey;
+    }
+
+    .tip-left {
+        top: 10px;
+        left: -25px;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-bottom-color: transparent;  
+    }
+
+    .dialogbox {
+        display: flex;
+        flex: 1 0 calc(100% - 70px);
+        min-width: 320px;
+    }
+
+    .dialogbox .body {
+        position: relative;
+        height: auto;
+        margin: 20px 10px;
+        padding: 5px;
+        background-color: $background-grey;
+        border-radius: 3px;
+        border: 5px solid $background-grey;
+        margin-top: 0;
+    }
+
+    .dialogbox .message {
+        min-height: 30px;
+        border-radius: 3px;
+        color: $secondary-grey;
+    }
+
+    .profile-pic {
+        width: 74px;
+        min-width: 50px;
+        margin-right: 25px;
+    }
+
+    .comment-text {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+        padding-bottom: 20px;
+
+         p span {
+            color: $turq-accent;
+            font-style: italic;
+        }
+        .post-date {
+            color: $primary-grey;
+        }
+    }
+
+    /* User comment form */
+
+    .post-container {
+        align-items: flex-start;
+        form, fieldset {
+            width: 100%;
+        }
+
+        h2, input {
+            border-bottom: 2px solid $background-grey;
+        }
+
+        h2 {
+            padding-bottom: 20px;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
+        flex-direction: column;
+        input {
+            background-color: white;
+        }
+
+        .send-btn {
+            background-color: #84A016;
+            padding: 20px 35px;
+            color:white;
+            margin-bottom: 50px;
+            transition: all 0.4s;
+
+            &:hover, &:focus {
+                background-color: $secondary-grey;
+                color: black;
+            }
+
+        }
+
+
+        fieldset, .post-requirements, .posts-text {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        fieldset {
+            
+            flex-direction: column;
+
+            .post-requirements {
+                input {
+                    flex: 1 0 calc((100% - 40px)/ 3 );
+                min-width: 100px;
+                margin: 0 auto;
+                padding: 2px 0;
+                height: 37px;
+                }
+
+                input:nth-of-type(-n+2)  {
+                    margin-right: 20px;
+                }
+            }
+
+            .post-text {
+                textarea {
+                width: 100%;
+                flex: 1 0 100%;
+                min-width: 250px;
+                margin-top: 50px;
+                margin-bottom: 40px;
+                resize: none;
+                outline: none;
+                border: none;
+                border-bottom: 2px solid $background-grey;
+                height: 120px;
+                }
+               
+            }
+
+        }
+    }
+    
 
 }
 /* blog content end*/

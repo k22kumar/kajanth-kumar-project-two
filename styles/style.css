@@ -932,9 +932,13 @@ nav {
   /* article heading end */
   /* card start */
   /* card end */
+  /* Comment Area */
+  /* I DID NOT WRITE THIS COMMENT SHAPE, original code by user Eze, the codepen I copied most the code from https://codepen.io/talentedunicorn/pen/rEqsf*/
+  /* Community comments */
+  /* User comment form */
 }
 
-.blog .blog-content-container .article-heading, .blog .blog-content-container .article-info, .blog .blog-content-container .info-pair, .blog .blog-content-container ul, .blog .blog-content-container .share, .blog .blog-content-container .posts-container, .blog .blog-content-container .posts-info, .blog .blog-content-container .comment, .blog .blog-content-container .comment-text, .blog .blog-content-container .post-comment, .blog .blog-content-container form {
+.blog .blog-content-container .article-heading, .blog .blog-content-container .article-info, .blog .blog-content-container .info-pair, .blog .blog-content-container ul, .blog .blog-content-container .share, .blog .blog-content-container .posts-container, .blog .blog-content-container .posts-info, .blog .blog-content-container .comment, .blog .blog-content-container .comment-text, .blog .blog-content-container .post-container, .blog .blog-content-container form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1058,7 +1062,7 @@ nav {
 .blog .blog-content-container h3:nth-last-of-type(2) {
   padding-bottom: 25px;
   margin-bottom: 70px;
-  border-bottom: 2px solid;
+  border-bottom: 2px solid #999999;
 }
 
 .blog .blog-content-container .posts-container {
@@ -1081,8 +1085,8 @@ nav {
 
 .blog .blog-content-container .post-card:hover, .blog .blog-content-container .post-card:focus {
   text-decoration: underline;
-  -webkit-box-shadow: 0px 5px 4px 1px #CCCCCC;
-          box-shadow: 0px 5px 4px 1px #CCCCCC;
+  -webkit-box-shadow: 0px 6px 5px 1px #CCCCCC;
+          box-shadow: 0px 6px 5px 1px #CCCCCC;
 }
 
 .blog .blog-content-container .posts-info {
@@ -1107,6 +1111,174 @@ nav {
 
 .blog .blog-content-container .posts-info p:last-child::after {
   content: ' \2192';
+}
+
+.blog .blog-content-container .comment-title {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #999999;
+  margin-bottom: 40px;
+}
+
+.blog .blog-content-container .comment {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.blog .blog-content-container .tip {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  background: transparent;
+  border: 10px solid #EDEDED;
+}
+
+.blog .blog-content-container .tip-left {
+  top: 10px;
+  left: -25px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.blog .blog-content-container .dialogbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(100% - 70px);
+          flex: 1 0 calc(100% - 70px);
+  min-width: 320px;
+}
+
+.blog .blog-content-container .dialogbox .body {
+  position: relative;
+  height: auto;
+  margin: 20px 10px;
+  padding: 5px;
+  background-color: #EDEDED;
+  border-radius: 3px;
+  border: 5px solid #EDEDED;
+  margin-top: 0;
+}
+
+.blog .blog-content-container .dialogbox .message {
+  min-height: 30px;
+  border-radius: 3px;
+  color: #CCCCCC;
+}
+
+.blog .blog-content-container .profile-pic {
+  width: 74px;
+  min-width: 50px;
+  margin-right: 25px;
+}
+
+.blog .blog-content-container .comment-text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 15px;
+  padding-bottom: 20px;
+}
+
+.blog .blog-content-container .comment-text p span {
+  color: #A4F1DC;
+  font-style: italic;
+}
+
+.blog .blog-content-container .comment-text .post-date {
+  color: #999999;
+}
+
+.blog .blog-content-container .post-container {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blog .blog-content-container .post-container form, .blog .blog-content-container .post-container fieldset {
+  width: 100%;
+}
+
+.blog .blog-content-container .post-container h2, .blog .blog-content-container .post-container input {
+  border-bottom: 2px solid #EDEDED;
+}
+
+.blog .blog-content-container .post-container h2 {
+  padding-bottom: 20px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.blog .blog-content-container .post-container input {
+  background-color: white;
+}
+
+.blog .blog-content-container .post-container .send-btn {
+  background-color: #84A016;
+  padding: 20px 35px;
+  color: white;
+  margin-bottom: 50px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.blog .blog-content-container .post-container .send-btn:hover, .blog .blog-content-container .post-container .send-btn:focus {
+  background-color: #CCCCCC;
+  color: black;
+}
+
+.blog .blog-content-container .post-container fieldset, .blog .blog-content-container .post-container .post-requirements, .blog .blog-content-container .post-container .posts-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.blog .blog-content-container .post-container fieldset {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blog .blog-content-container .post-container fieldset .post-requirements input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc((100% - 40px)/ 3);
+          flex: 1 0 calc((100% - 40px)/ 3);
+  min-width: 100px;
+  margin: 0 auto;
+  padding: 2px 0;
+  height: 37px;
+}
+
+.blog .blog-content-container .post-container fieldset .post-requirements input:nth-of-type(-n+2) {
+  margin-right: 20px;
+}
+
+.blog .blog-content-container .post-container fieldset .post-text textarea {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  min-width: 250px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  resize: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #EDEDED;
+  height: 120px;
 }
 
 footer, button, input {
