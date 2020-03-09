@@ -30,7 +30,7 @@
         a {
             padding-left: 0;
         }
-        a:visited, h3,button, label, input {
+        a:visited, h3,button, label, input, .copyright {
             color: $secondary-grey;
         }
 
@@ -58,6 +58,10 @@
 
         input {
             width: calc(100% - 40px);
+        }
+
+        .copyright {
+            padding-top: 15px;
         }
 
         .social-bar {

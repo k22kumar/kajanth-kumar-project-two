@@ -1,0 +1,35 @@
+
+
+@media (max-width:985px) {
+    .wrapper {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 870px) {
+    footer .footer-content-container {
+        height: 50vh;
+    }
+}
+
+@media (max-width:720px) {
+    footer .links-container {
+        flex-wrap: wrap;
+        border: 2px solid tran;
+    }
+
+    footer form {
+        border: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .wrapper {
+        width: 100%;
+    }
+    footer form {
+        width: 80vw;
+    }
+}
+
