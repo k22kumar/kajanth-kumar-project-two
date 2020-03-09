@@ -280,7 +280,8 @@ main {
 
 /* User comment form universal to contact page as well */
 
-    .post-container {
+.post-container {
+    
         align-items: flex-start;
         form, fieldset {
             width: 100%;
@@ -307,6 +308,7 @@ main {
             color:white;
             margin-bottom: 50px;
             transition: all 0.4s;
+            align-self: flex-start;
 
             &:hover, &:focus {
                 background-color: $secondary-grey;

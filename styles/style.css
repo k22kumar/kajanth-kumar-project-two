@@ -1307,6 +1307,8 @@ footer .social-bar {
   margin-bottom: 50px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .post-container .send-btn:hover, .post-container .send-btn:focus {
@@ -1481,6 +1483,7 @@ footer .social-bar {
   background-image: url("../assets/contact-2.jpeg");
   background-color: none;
   background-size: cover;
+  background-position: center;
   height: 70vh;
 }
 
@@ -1578,5 +1581,17 @@ footer .social-bar {
   .about-text-container {
     width: 100%;
     padding: 0 10px;
+  }
+}
+
+@media (max-width: 895px) {
+  .contact .contact-details-container .connection-container .connection:nth-of-type(2) {
+    border-right: 2px solid white;
+  }
+}
+
+@media (max-width: 895px) {
+  .contact .contact-details-container .connection-container .connection:nth-of-type(1) {
+    border-right: 2px solid white;
   }
 }
